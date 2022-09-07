@@ -25,6 +25,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet" />
 
+    {{-- Roboto FOnt --}}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
     <title>Ngerecokin.id</title>
   </head>
   <body>
@@ -113,7 +118,7 @@
               <div class="container content-left d-flex flex-column justify-content-center" style="width: 50%; color: white; margin-left: 0">
                 <div class="text-left d-flex flex-column justify-content-center">
                   <h1 style="font-family: 'Montserrat', sans-serif; width: 440px">Content Creator & Digital Agency</h1>
-                  <p>
+                  <p style="font-family: 'Roboto', sans-serif;">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, magna
                     aliqua. ipsum is simply dummy text of the printing
                   </p>
@@ -192,9 +197,9 @@
           <div class="col-lg-6 col-md-12 col-sm-12">
             <div class="about-content">
               <div class="abount-content-text d-flex flex-column justify-content-center">
-                <h6>About Out Company</h6>
-                <h2>Providing your business with a quality IT services is out passion.</h2>
-                <p>
+                <h6 style="font-family: 'Montserrat', sans-serif; color: rgb(97, 51, 206);">About Out Company</h6>
+                <h2 style="font-family: 'Fredoka One', cursive" >Providing your business with a quality IT services is out passion.</h2>
+                <p style="font-family: 'Roboto', sans-serif;">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad
                   minim veniam, nostrud
                 </p>
@@ -204,18 +209,43 @@
                   <span class="title">HTML</span>
                   <div class="skill-bar">
                     <span class="skill-per">
-                      <span class="tooltip">90%</span>
-                    </div>
+                      <span class="text">90%</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="skill-box d-flex flex-column justify-content-center">
+                  <span class="title">CSS</span>
+                  <div class="skill-bar">
+                    <span class="skill-per css">
+                      <span class="text">70%</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="skill-box d-flex flex-column justify-content-center">
+                  <span class="title">Java Script</span>
+                  <div class="skill-bar">
+                    <span class="skill-per js">
+                      <span class="text">80%</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="skill-box d-flex flex-column justify-content-center">
+                  <span class="title">React Js</span>
+                  <div class="skill-bar">
+                    <span class="skill-per reactjs">
+                      <span class="text">60%</span>
+                    </span>
                   </div>
                 </div>
               </div>
             </div>
             
-          <div class="col-lg-5">
+          
+          </div>
+          <div class="col-lg-6">
             <div class="img ml-5">
                 <img class="ml-5" src="Asset/img/Card/about.jpg" width="400px" alt="">
             </div>
-          </div>
           </div>
         </div>
       </div>

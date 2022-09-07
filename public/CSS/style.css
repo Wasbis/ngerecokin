@@ -136,18 +136,19 @@ section {
     background: #dfa319;
 }
 
-/* skill-per */
+/* skill-bar */
 
-.about-area {
+section.about-area {
     height: 100%;
     width: 100%;
+    background-color: rgb(255, 255, 255);
 }
 
 .container-skill {
     position: relative;
     max-width: 500px;
     width: 100%;
-    height: 80px;
+    height: 250px;
     border-radius: 36px;
     overflow: hidden;
     background: #fff;
@@ -155,14 +156,77 @@ section {
     border-radius: 7px;
     left: 0;
 }
-.container-skill.skill-box {
-    width: 100%;
-    margin: 25px 0;
+.container-skill .skill-box {
+    width: 95%;
+    margin: 7px 10px;
     background-color: white;
 }
 .skill-box .title {
     display: block;
     font-size: 14px;
     font-weight: 600;
+    color: rgb(11, 4, 4);
+}
+
+.skill-box .skill-bar {
+    height: 8px;
+    width: 100%;
+    border-radius: 6px;
+    background: rgb(0, 0, 0, 0.1);
+    margin-top: 6px;
+}
+
+.skill-bar .skill-per {
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 90%;
+    border-radius: 6px;
+    background: rgb(97, 51, 206);
+    animation: progress 1.5s ease-in-out forwards;
+}
+
+.skill-per.css {
+    width: 70%;
+}
+.skill-per.js {
+    width: 80%;
+}
+
+.skill-per.reactjs {
+    width: 60%;
+}
+
+@keyframes progress {
+    0% {
+        width: 0;
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.skill-per .text {
+    position: absolute;
+    right: -14px;
+    top: -28px;
+    font-size: 9px;
+    font-weight: 500;
     color: #fff;
+    padding: 3px 6px;
+    border-radius: 3px;
+    background: rgb(97, 51, 206);
+}
+
+.text::before {
+    content: "";
+    position: absolute;
+    bottom: -9px;
+    height: 10px;
+    width: 10px;
+    left: 35%;
+    z-index: 1;
+    transform: translateY(-50%) rotate(45deg);
+    background-color: rgb(97, 51, 206);
 }
